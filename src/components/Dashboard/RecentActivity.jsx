@@ -25,7 +25,7 @@ const RecentActivity = ({ products }) => {
         ))}
       </div>
       <button 
-        onClick={() => setScreen('analysis')} 
+        onClick={() => setScreen('product analysis')} 
         className="mt-4 text-blue-600 font-medium hover:underline flex items-center gap-1 self-end"
       >
         View All Products <ArrowRight size={16} />
