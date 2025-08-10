@@ -13,7 +13,7 @@ const AppContent = () => {
     switch (state.currentScreen) {
       case 'dashboard':
         return <Dashboard />;
-      case 'creator':
+      case 'create product':
         return <ProductCreator />;
       case 'product analysis':
         return <ProductAnalysis />;

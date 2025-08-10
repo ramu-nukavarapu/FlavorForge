@@ -12,12 +12,12 @@ const ProductAnalysis = () => {
   useEffect(() => {
     // We no longer need to fetch products here, as it's handled by the context
     // We can still set up the chart data if needed
-    // setChartData([
-    //   { month: 'Jan', product1: 65, product2: 45, product3: 70 },
-    //   { month: 'Feb', product1: 70, product2: 52, product3: 75 },
-    //   { month: 'Mar', product1: 75, product2: 58, product3: 80 },
-    //   { month: 'Apr', product1: 80, product2: 65, product3: 85 },
-    // ]);
+    setChartData([
+      { month: 'Jan', product1: 65, product2: 45, product3: 70 },
+      { month: 'Feb', product1: 70, product2: 52, product3: 75 },
+      { month: 'Mar', product1: 75, product2: 58, product3: 80 },
+      { month: 'Apr', product1: 80, product2: 65, product3: 85 },
+    ]);
   }, [products]); // Re-run effect when products change
 
   const filteredProducts = products.filter(product => {

@@ -11,7 +11,7 @@ const Navigation = () => {
         <div className="flex items-center gap-8">
           <h1 className="text-2xl font-bold text-blue-600">FlavorForge</h1>
           <div className="hidden md:flex gap-4">
-            {['dashboard', 'creator', 'product analysis', 'market intelligence'].map((screen) => (
+            {['dashboard', 'create product', 'product analysis', 'market intelligence'].map((screen) => (
               <button
                 key={screen}
                 onClick={() => setScreen(screen)}
@@ -21,14 +21,14 @@ const Navigation = () => {
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
-                {screen === 'creator' ? 'Create Product' : screen.charAt(0).toUpperCase() + screen.slice(1).replace('-', ' ')}
+                {screen === 'create product' ? 'Create Product' : screen.charAt(0).toUpperCase() + screen.slice(1).replace('-', ' ')}
               </button>
             ))}
           </div>
         </div>
         {
         <button
-          onClick={() => setScreen('creator')}
+          onClick={() => setScreen('create product')}
           className="bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition-colors flex items-center gap-2"
         >
           <Plus size={18} />
