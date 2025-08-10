@@ -1,30 +1,7 @@
 // src/services/api.js
 
 export const getDashboardData = async () => {
-  return dashboardData;
-};
-
-export const getProductsData = async () => {
-  return productsData;
-};
-
-export const getTrendsData = async () => {
-  return trendsData;
-};
-
-export const getCompetitorsData = async () => {
-  return competitorsData;
-};
-
-export const getAiSuggestions = async (formData) => {
-  // In a real app, send formData to the API to get suggestions
-  console.log("Fetching AI suggestions for:", formData);
-  return aiSuggestions;
-};
-
-// Mock Data to be used in the API service
-const mockData = {
-  dashboardData: {
+  const dashboardData = {
     totalProducts: 247,
     successRate: 87,
     activeUsers: 1432,
@@ -40,8 +17,13 @@ const mockData = {
       { month: 'Mar', beverages: 75, snacks: 55, dairy: 40 },
       { month: 'Apr', beverages: 80, snacks: 60, dairy: 45 }
     ]
-  },
-  productsData: [
+  }
+
+  return dashboardData;
+};
+
+export const getProductsData = async () => {
+  const productsData = [
     { id: 1, name: 'Spiced Turmeric Latte', category: 'Beverages', score: 92, status: 'Active', created: '2024-08-01' },
     { id: 2, name: 'Coconut Quinoa Bites', category: 'Snacks', score: 87, status: 'Testing', created: '2024-07-28' },
     { id: 3, name: 'Green Tea Yogurt', category: 'Dairy', score: 94, status: 'Active', created: '2024-07-25' },
@@ -50,8 +32,13 @@ const mockData = {
     { id: 6, name: 'Protein Chickpea Pasta', category: 'Cereals', score: 85, status: 'Testing', created: '2024-07-10' },
     { id: 7, name: 'Hibiscus Ginger Tea', category: 'Beverages', score: 88, status: 'Active', created: '2024-07-05' },
     { id: 8, name: 'Dark Chocolate Quinoa', category: 'Confectionery', score: 93, status: 'Active', created: '2024-06-30' }
-  ],
-  trendsData: {
+  ]
+
+  return productsData;
+};
+
+export const getTrendsData = async () => {
+  const trendsData = {
     trendingIngredients: [
       { name: 'Turmeric', score: 85, growth: '+12%' },
       { name: 'Green Tea', score: 78, growth: '+8%' },
@@ -72,23 +59,28 @@ const mockData = {
       { month: 'May', healthy: 78, organic: 65, plantBased: 50, functional: 45 },
       { month: 'Jun', healthy: 85, organic: 70, plantBased: 55, functional: 50 }
     ]
-  },
-  competitorsData: [
+  }
+
+  return trendsData;
+};
+
+export const getCompetitorsData = async () => {
+  const competitorsData = [
     { company: 'NaturalFoods Inc', products: 45, score: 87, trend: '+5%' },
     { company: 'HealthyBites Co', products: 32, score: 82, trend: '+3%' },
     { company: 'GreenTech Foods', products: 28, score: 79, trend: '-1%' }
-  ],
-  aiSuggestions: [
+  ]
+
+  return competitorsData;
+};
+
+export const getAiSuggestions = async (formData) => {
+  // In a real app, send formData to the API to get suggestions
+  console.log("Fetching AI suggestions for:", formData);
+  const aiSuggestions = [
     { name: 'Turmeric Ginger Energy Drink', score: 94, description: 'Health-focused beverage with anti-inflammatory properties' },
     { name: 'Spiced Coconut Refresher', score: 89, description: 'Tropical flavor with warming spices for mass appeal' },
     { name: 'Green Tea Mint Fusion', score: 87, description: 'Calming blend targeting wellness-conscious consumers' }
   ]
+  return aiSuggestions;
 };
-
-export const {
-  dashboardData,
-  productsData,
-  trendsData,
-  competitorsData,
-  aiSuggestions
-} = mockData;
