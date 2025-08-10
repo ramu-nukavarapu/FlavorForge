@@ -1,12 +1,57 @@
-# React + Vite
+# 🚀 FlavorForge Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive dashboard for a food product development platform. This application allows users to analyze market trends, create new product concepts, and monitor the performance of existing products. It is built to seamlessly integrate with a FastAPI backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Features
 
-## Expanding the ESLint configuration
+* **Interactive Dashboard**: Displays key business metrics, recent activity, and market trends with dynamic charts.
+* **Multi-Step Product Creator**: Guides users through selecting a category, defining a target audience, and choosing flavor profiles to generate AI-powered product suggestions.
+* **Product Analysis**: A searchable and filterable table of all products with detailed performance scores and status.
+* **Market Intelligence**: Provides in-depth analysis of trending ingredients and competitive landscape.
+* **Context API for State Management**: Uses React Context to handle global states like navigation, loading, and errors, ensuring a consistent user experience.
+* **Responsive Design**: The layout adapts gracefully to different screen sizes, from mobile devices to desktops.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🛠️ Tech Stack
+
+* **Framework**: [React](https://reactjs.org/)
+* **Build Tool**: [Vite](https://vitejs.dev/)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **State Management**: React Context API, `useState`, `useEffect`
+* **Charting Library**: [Recharts](https://recharts.org/)
+* **Icons**: [Lucide React](https://lucide.dev/showcase/react)
+* **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
+
+---
+
+### 📦 Getting Started
+
+Follow these steps to get the project up and running on your local machine.
+
+#### 1. Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+#### 2. Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/ramu-nukavarapu/FlavorForge.git](https://github.com/ramu-nukavarapu/FlavorForge.git)
+    cd FlavorForge
+    ```
+2.  Install all project dependencies:
+    ```bash
+    npm install
+    ```
+
+#### 3. Running the App
+
+Start the development server. The application will run on `http://localhost:5173`.
+```bash
+npm run dev
+```
+
+Note: This application is designed to work with the FlavorForge Backend API. Please ensure the backend is running and that CORS is configured correctly for the frontend to function properly.
