@@ -5,6 +5,7 @@ import ProductCreator from './components/ProductCreator/ProductCreator';
 import ProductAnalysis from './components/ProductAnalysis/ProductAnalysis';
 import MarketIntelligence from './components/MarketIntelligence/MarketIntelligence';
 import { Toaster } from 'react-hot-toast'; 
+import DevelopmentEnhancements from './components/DevelopmentEnhancements/DevelopmentEnhancements';
 
 const AppContent = () => {
   const { state } = useAppContext();
@@ -19,6 +20,9 @@ const AppContent = () => {
         return <ProductAnalysis />;
       case 'market intelligence':
         return <MarketIntelligence />;
+      // The typo is fixed here 👇
+      case 'development enhancements':
+        return <DevelopmentEnhancements />;
       default:
         return <Dashboard />;
     }
